@@ -1,0 +1,14 @@
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/bin/Debug/net8.0/Project last try
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/bin/Debug/net8.0/Project last try.deps.json
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/bin/Debug/net8.0/Project last try.runtimeconfig.json
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/bin/Debug/net8.0/Project last try.dll
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/bin/Debug/net8.0/Project last try.pdb
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/Project last try.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/Project last try.AssemblyInfoInputs.cache
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/Project last try.AssemblyInfo.cs
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/Project last try.csproj.CoreCompileInputs.cache
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/Project last try.dll
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/refint/Project last try.dll
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/Project last try.pdb
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/Project last try.genruntimeconfig.cache
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/ref/Project last try.dll
