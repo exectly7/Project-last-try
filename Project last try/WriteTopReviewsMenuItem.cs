@@ -1,5 +1,8 @@
 namespace Project_last_try
 {
+    /// <summary>
+    /// Реализует задачу 3.
+    /// </summary>
     public class WriteTopReviewsMenuItem : MenuItem
     {
         /// <summary>
@@ -13,7 +16,10 @@ namespace Project_last_try
 
         public const string Header = "name,location,Date,Rating,Review,Image_Links";
         private const string FileName = "top-reviews-20-21.csv";
-        private static string[] _basePath =  Directory.GetCurrentDirectory().Split(Path.DirectorySeparatorChar);
+        private static readonly string[] BuildDirectory = Directory.GetCurrentDirectory().Split(Path.DirectorySeparatorChar);
+        private static readonly string SolutionDirectory = string.Join(Path.DirectorySeparatorChar, BuildDirectory, 0,
+                                                                BuildDirectory.Length - 3) + Path.DirectorySeparatorChar + "Data" + Path.DirectorySeparatorChar
+                                                            + "Output" + Path.DirectorySeparatorChar;
 
         private readonly string _outputPath =
             "/Users/ivanyburov/RiderProjects/Project last try/Project last try/Data/Output/";
@@ -41,7 +47,7 @@ namespace Project_last_try
                     reviewsToWrite.Add(review.CsvLine);
                 }
             }
-            FileHandler file = new(_outputPath, FileName);
+            FileHandler file = new(SolutionDirectory, FileName);
             file.Export(reviewsToWrite.ToArray());
             Menu.Message("Файл успешно записан", true);
         }

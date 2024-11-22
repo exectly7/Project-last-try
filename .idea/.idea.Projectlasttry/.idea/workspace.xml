@@ -9,11 +9,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c8cfb8f4-ec1c-4120-bb3f-edcd0ac980f9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Projectlasttry/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projectlasttry/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/BadCsvException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/BadCsvException.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/BadReviewsImagesMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/BadReviewsImagesMenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/BestRatingMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/BestRatingMenuItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project last try/CsvParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/CsvProcessing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project last try/Data/Input/reviews_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/Data/Input/reviews_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project last try/FileHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/FileHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/CsvProcessing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/CsvProcessing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/Data/Output/grouped-rates.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/EmptyFileException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/EmptyFileException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/ExitMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/ExitMenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/GoodAndBadPerYearMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/GoodAndBadPerYearMenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/LocationFilterMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/LocationFilterMenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/Menu.cs" afterDir="false" />
@@ -21,6 +23,8 @@
       <change beforePath="$PROJECT_DIR$/Project last try/RatingPercentMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/RatingPercentMenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/ReviewPerYeatMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/ReviewPerYeatMenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/SortByRatingAndDateMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/SortByRatingAndDateMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/StatsMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/StatsMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/SwitchFileMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/SwitchFileMenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/WriteTopReviewsMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/WriteTopReviewsMenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/bin/Debug/net8.0/Project last try.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/bin/Debug/net8.0/Project last try.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/bin/Debug/net8.0/Project last try.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/bin/Debug/net8.0/Project last try.pdb" afterDir="false" />
@@ -110,7 +114,7 @@
       <updated>1732215281809</updated>
       <workItem from="1732215283273" duration="12067000" />
       <workItem from="1732227526273" duration="83000" />
-      <workItem from="1732227870204" duration="15213000" />
+      <workItem from="1732227870204" duration="17177000" />
     </task>
     <servers />
   </component>

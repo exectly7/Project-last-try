@@ -1,5 +1,8 @@
 namespace Project_last_try
 {
+    /// <summary>
+    /// Реализует задачу 4.3.
+    /// </summary>
     public class BadReviewsImagesMenuItem : MenuItem
     {
         /// <summary>

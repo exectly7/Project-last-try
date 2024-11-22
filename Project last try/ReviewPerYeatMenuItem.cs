@@ -1,5 +1,8 @@
 namespace Project_last_try
 {
+    /// <summary>
+    /// Реализует задачу 4.1.
+    /// </summary>
     public class ReviewPerYeatMenuItem : MenuItem
     {
         /// <summary>

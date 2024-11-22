@@ -1,5 +1,8 @@
 namespace Project_last_try
 {
+    /// <summary>
+    /// Реализует вывоз сабменю задачи 4.
+    /// </summary>
     public class StatsMenuItem : MenuItem
     {
         /// <summary>
@@ -16,7 +19,7 @@ namespace Project_last_try
         /// </summary>
         public override void Start()
         {
-            Menu.Run(Menu.SubMenuItems);
+            Menu.Run(Menu.SubMenuItems, true);
         }
     }
 }

@@ -1,5 +1,8 @@
 namespace Project_last_try
 {
+    /// <summary>
+    /// Реализует задачу 4.4.
+    /// </summary>
     public class GoodAndBadPerYearMenuItem : MenuItem
     {
         /// <summary>

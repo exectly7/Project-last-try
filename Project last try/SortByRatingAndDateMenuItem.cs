@@ -1,12 +1,16 @@
 namespace Project_last_try
 {
+    /// <summary>
+    /// Реализует задачу 7.
+    /// </summary>
     public class SortByRatingAndDateMenuItem : MenuItem
     {
         public override string Title { get; set; } = "Сделать выборку по рейтингу отсортировав по дате.";
-        private static string[] _buildDirectory = Directory.GetCurrentDirectory().Split(Path.DirectorySeparatorChar);
-        private static string _solutionDirectory = string.Join(Path.DirectorySeparatorChar, _buildDirectory, 0,
-            _buildDirectory.Length - 3) + Path.DirectorySeparatorChar + "Data" + Path.DirectorySeparatorChar
-                                           + "Output" + Path.DirectorySeparatorChar;
+        private const string FileName = "top-reviews-20-21.csv";
+        private static readonly string[] BuildDirectory = Directory.GetCurrentDirectory().Split(Path.DirectorySeparatorChar);
+        private static readonly string SolutionDirectory = string.Join(Path.DirectorySeparatorChar, BuildDirectory, 0,
+                                                                BuildDirectory.Length - 3) + Path.DirectorySeparatorChar + "Data" + Path.DirectorySeparatorChar
+                                                            + "Output" + Path.DirectorySeparatorChar;
         public override void Start()
         {
             if (Program.AllReviews == Array.Empty<Review>())
@@ -70,7 +74,7 @@ namespace Project_last_try
                 }
             }
             
-            FileHandler file = new(_solutionDirectory, "grouped-rates.csv");
+            FileHandler file = new(SolutionDirectory, FileName);
             file.Export(data.ToArray());
 
             Menu.Message("Файл grouped-rates.csv записан в папку Data/Output", true);

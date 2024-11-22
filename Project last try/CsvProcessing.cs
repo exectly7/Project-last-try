@@ -10,6 +10,7 @@ namespace Project_last_try
         /// Запускает процесс обработки данных
         /// </summary>
         /// <returns>Массив обработанных данных</returns>
+        /// <exception cref="BadCsvException"></exception>
         public Review[] Parse()
         {
             List<Review> reviews = [];

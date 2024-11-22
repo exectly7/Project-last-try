@@ -1,5 +1,8 @@
 namespace Project_last_try
 {
+    /// <summary>
+    /// Реализует задачу 5.
+    /// </summary>
     public class ExitMenuItem : MenuItem
     {
         /// <summary>

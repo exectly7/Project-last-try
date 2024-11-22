@@ -1,5 +1,8 @@
 namespace Project_last_try
 {
+    /// <summary>
+    /// Реализует задачу 6.
+    /// </summary>
     public class LocationFilterMenuItem : MenuItem
     {
         /// <summary>

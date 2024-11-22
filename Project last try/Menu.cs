@@ -27,7 +27,7 @@ namespace Project_last_try
         /// <summary>
         /// Логика управления меню.
         /// </summary>
-        public static void Run(MenuItem[] items)
+        public static void Run(MenuItem[] items,  bool submenu)
         {
             _selectedItem = 0;
             Show(items);
@@ -48,7 +48,11 @@ namespace Project_last_try
                         break;
                     case ConsoleKey.Enter:
                         SafeRun(items[_selectedItem]);
-                        return;
+                        if (submenu)
+                        {
+                            return;
+                        }
+                        break; 
                 }
             }
         }
@@ -108,7 +112,7 @@ namespace Project_last_try
             {
                 Message(e.Message, true);
             }
-            Run(MainMenuItems);
+            Show(MainMenuItems);
         }
         
         /// <summary>

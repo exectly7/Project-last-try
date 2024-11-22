@@ -1,5 +1,8 @@
 namespace Project_last_try
 {
+    /// <summary>
+    /// Реализует задачу 2.
+    /// </summary>
     public class BestRatingMenuItem : MenuItem
     {
         /// <summary>

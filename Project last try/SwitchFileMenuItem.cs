@@ -1,5 +1,8 @@
 namespace Project_last_try
 {
+    /// <summary>
+    /// Реализует задачу 1.
+    /// </summary>
     public class SwitchFileMenuItem : MenuItem
     {
         public override string Title { get; set; } = "Выбрать файл";
@@ -14,7 +17,6 @@ namespace Project_last_try
             Program.AllReviews = csv.Parse();
             Menu.Message("Файл импортирован", true);
             Title = "Сменить файл";
-            Menu.Run(Menu.MainMenuItems);
         }
     }
 }
