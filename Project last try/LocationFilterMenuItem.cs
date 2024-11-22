@@ -13,6 +13,10 @@ namespace Project_last_try
             get => "Подборка отзывов по локации, запись в файл";
             set => throw new NotImplementedException();
         }
+        private static readonly string[] BuildDirectory = Directory.GetCurrentDirectory().Split(Path.DirectorySeparatorChar);
+        private static readonly string SolutionDirectory = string.Join(Path.DirectorySeparatorChar, BuildDirectory, 0,
+                                                               BuildDirectory.Length - 3) + Path.DirectorySeparatorChar + "Data" + Path.DirectorySeparatorChar
+                                                           + "Output" + Path.DirectorySeparatorChar;
 
         /// <summary>
         /// Запустить выполнение задачи.
@@ -53,11 +57,9 @@ namespace Project_last_try
             }
             result.Sort();
             Menu.Message(result.ToArray(), true);
-            Menu.Message("Введите путь к файлу:");
-            string path = Console.ReadLine() ?? string.Empty;
             Menu.Message("Название файла");
             string fileName = Console.ReadLine() ?? string.Empty;
-            FileHandler file = new(path, fileName);
+            FileHandler file = new(SolutionDirectory, fileName);
             file.Export(csvToWrite.ToArray());
             Menu.Message("Файл успешно записан.", true);
         }

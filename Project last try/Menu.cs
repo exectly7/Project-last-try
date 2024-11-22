@@ -1,3 +1,5 @@
+using System.Security;
+
 namespace Project_last_try
 {
     /// <summary>
@@ -96,11 +98,11 @@ namespace Project_last_try
             {
                 Message("Файл не был импортирован. Вы можете импортировать файл при помощи 1 пункта меню.", true);
             }
-            catch (FileNotFoundException)
+            catch (Exception e) when (e is FileNotFoundException or DirectoryNotFoundException)
             {
                 Message("Файла по этому пути не существует.", true);
             }
-            catch (FormatException)
+            catch (Exception e) when (e is FormatException or NotSupportedException)
             {
                 Message("Файл имеет некорректный формат.", true);
             }
@@ -108,9 +110,18 @@ namespace Project_last_try
             {
                 Message("Данные в файле некорректны.", true);
             }
-            catch (Exception e)
+            catch (Exception e) when (e is UnauthorizedAccessException or SecurityException)
             {
-                Message(e.Message, true);
+                Message("Нет прав доступа к файлам.", true);
+            }
+            catch (Exception e) when (e is PathTooLongException or SecurityException)
+            {
+                Message("Путь к файлу слишком длинный.", true);
+            }
+            catch (Exception e) when (e is ArgumentOutOfRangeException or IndexOutOfRangeException 
+                                          or ArgumentException or ArgumentOutOfRangeException or IOException)
+            {
+                Message("Произошла непредвиденная ошибка при выполнении.", true);
             }
             Show(MainMenuItems);
         }
