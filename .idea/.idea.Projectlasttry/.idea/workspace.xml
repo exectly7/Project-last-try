@@ -7,7 +7,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8cfb8f4-ec1c-4120-bb3f-edcd0ac980f9" name="Changes" comment="" />
+    <list default="true" id="c8cfb8f4-ec1c-4120-bb3f-edcd0ac980f9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Project last try/MenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Projectlasttry/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projectlasttry/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/CsvParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/CsvParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/FileHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/FileHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/MainMenu/BestRatingMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/BestRatingMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/MainMenu/ExitMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/ExitMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/MainMenu/LocationFilterMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/LocationFilterMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/MainMenu/SortByRatingAndDateMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/SortByRatingAndDateMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/MainMenu/StatsMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/StatsMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/MainMenu/SwitchFileMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/SwitchFileMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/MainMenu/WriteTopReviewsMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/WriteTopReviewsMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/MenuItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/SubMenu/BadReviewsImagesMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/BadReviewsImagesMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/SubMenu/GoodAndBadPerYearMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/GoodAndBadPerYearMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/SubMenu/RatingPercentMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/RatingPercentMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/MenuItems/SubMenu/ReviewPerYeatMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/ReviewPerYeatMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +38,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "exectly7"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/exectly7/Project-last-try.git",
+    "accountId": "ef6f0a95-aa97-4628-8022-2653f37401e1"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -74,7 +105,7 @@
       <updated>1732215281809</updated>
       <workItem from="1732215283273" duration="12067000" />
       <workItem from="1732227526273" duration="83000" />
-      <workItem from="1732227870204" duration="8300000" />
+      <workItem from="1732227870204" duration="9421000" />
     </task>
     <servers />
   </component>
@@ -90,7 +121,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Project last try/MenuItems/MainMenu/SortByRatingAndDateMenuItem.cs</url>
+          <url>file://$PROJECT_DIR$/Project last try/SortByRatingAndDateMenuItem.cs</url>
           <line>8</line>
           <properties documentPath="$PROJECT_DIR$/Project last try/MenuItems/MainMenu/SortByRatingAndDateMenuItem.cs" containingFunctionPresentation="Method 'Start'">
             <startOffsets>

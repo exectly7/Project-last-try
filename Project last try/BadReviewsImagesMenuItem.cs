@@ -1,4 +1,4 @@
-namespace Project_last_try.SubMenu
+namespace Project_last_try
 {
     public class BadReviewsImagesMenuItem : MenuItem
     {

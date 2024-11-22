@@ -1,16 +1,28 @@
-using Project_last_try.SubMenu;
-
 namespace Project_last_try
 {
+    /// <summary>
+    ///  Класс, отвечающий за вывод данных в консоль.
+    /// </summary>
     public static class Menu
     {
+        /// <summary>
+        /// Хранит номер выбранного пункта меню, для того, чтобы его подсвечивать.
+        /// </summary>
         private static int _selectedItem;
+        
+        /// <summary>
+        /// Список элементов для работы главного меню.
+        /// </summary>
         public static readonly MenuItem[] MainMenuItems = [new SwitchFileMenuItem(),  new BestRatingMenuItem(), 
                                                         new StatsMenuItem(), new WriteTopReviewsMenuItem(),
                                                         new LocationFilterMenuItem(), new SortByRatingAndDateMenuItem(),
                                                         new ExitMenuItem()];
+        
+        /// <summary>
+        /// Список элементов меню для работы побочного меню 4 задачи.
+        /// </summary>
         public static readonly MenuItem[] SubMenuItems = [new ReviewPerYeatMenuItem(), new RatingPercentMenuItem(), 
-            new BadReviewsImagesMenuItem(), new GoodAndBadPerYearMenuItem()];
+                                                        new BadReviewsImagesMenuItem(), new GoodAndBadPerYearMenuItem()];
 
         /// <summary>
         /// Логика управления меню.

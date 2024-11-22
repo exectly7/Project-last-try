@@ -1,29 +1,30 @@
-using System.Buffers;
-using System.Data.Common;
-using System.Text;
-using System.Text.RegularExpressions;
-
 namespace Project_last_try
 {
-    public class CsvProcessing
+    /// <summary>
+    /// Класс для разделения данных на нужные поля.
+    /// </summary>
+    /// <param name="data">Данные для обработки</param>
+    public class CsvProcessing(string[] data)
     {
-        private string[] _data;
-
-        public CsvProcessing(string[] data)
-        {
-            _data = data;
-        }
-        
+        /// <summary>
+        /// Запускает процесс обработки данных
+        /// </summary>
+        /// <returns>Массив обработанных данных</returns>
         public Review[] Parse()
         {
             List<Review> reviews = [];
-            foreach (string row in _data[1..])
+            foreach (string row in data[1..])
             {
                 reviews.Add(new Review(CsvLineParse(row), row));
             }
             return reviews.ToArray();
         }
 
+        /// <summary>
+        /// Обрабатывает одну строку файла.
+        /// </summary>
+        /// <param name="input">Строка.</param>
+        /// <returns>Массив полей строки.</returns>
         private string[] CsvLineParse(string input)
         {
             string[] result = new string[6];
@@ -47,7 +48,7 @@ namespace Project_last_try
                     result[i] = input;
                 }
             }
-
+            
             return result;
         }
     }
