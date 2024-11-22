@@ -16,6 +16,10 @@ namespace Project_last_try
         /// </summary>
         public override void Start()
         {
+            if (Program.AllReviews == Array.Empty<Review>())
+            {
+                throw new EmptyFileException();
+            }
             Dictionary<string, List<string>> locationReview = new();
             List<string> csvToWrite = new();
             foreach (Review review in Program.AllReviews)

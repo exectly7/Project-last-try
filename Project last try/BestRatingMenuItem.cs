@@ -16,6 +16,10 @@ namespace Project_last_try
         /// </summary>
         public override void Start()
         {
+            if (Program.AllReviews == Array.Empty<Review>())
+            {
+                throw new EmptyFileException();
+            }
             int maxRating = 0;
             foreach (Review review in Program.AllReviews)
             {

@@ -14,7 +14,7 @@ namespace Project_last_try
         /// <summary>
         /// Хранилище данных для импортированного файла.
         /// </summary>
-        public static Review[]? AllReviews { get; set; }
+        public static Review[] AllReviews { get; set; } = [];
         
         /// <summary>
         /// Точка входа.

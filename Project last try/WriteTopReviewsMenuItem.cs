@@ -15,13 +15,17 @@ namespace Project_last_try
         private const string FileName = "top-reviews-20-21.csv";
         private static string[] _basePath =  Directory.GetCurrentDirectory().Split(Path.DirectorySeparatorChar);
 
-        private string _outputPath =
+        private readonly string _outputPath =
             "/Users/ivanyburov/RiderProjects/Project last try/Project last try/Data/Output/";
         /// <summary>
         /// Запустить выполнение задачи.
         /// </summary>
         public override void Start()
         {
+            if (Program.AllReviews == Array.Empty<Review>())
+            {
+                throw new EmptyFileException();
+            }
             Menu.Message("Введите n. Отзывы с n+ рейтингом будут записаны в файл.");
             int n = int.Parse(Console.ReadLine() ?? string.Empty);
             if (n is < 1 or > 5)

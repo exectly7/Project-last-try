@@ -12,3 +12,4 @@
 /Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/Project last try.pdb
 /Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/Project last try.genruntimeconfig.cache
 /Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/ref/Project last try.dll
+/Users/ivanyburov/RiderProjects/Project last try/Project last try/obj/Debug/net8.0/Project last try.sourcelink.json

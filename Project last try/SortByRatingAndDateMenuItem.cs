@@ -6,6 +6,10 @@ namespace Project_last_try
 
         public override void Start()
         {
+            if (Program.AllReviews == Array.Empty<Review>())
+            {
+                throw new EmptyFileException();
+            }
             Dictionary<int, List<Review>> sortedReviews = new();
             foreach (Review review in Program.AllReviews)
             {

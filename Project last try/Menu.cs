@@ -88,9 +88,21 @@ namespace Project_last_try
             {
                 item.Start();
             }
+            catch (EmptyFileException)
+            {
+                Message("Файл не был импортирован. Вы можете импортировать файл при помощи 1 пункта меню.", true);
+            }
+            catch (FileNotFoundException)
+            {
+                Message("Файла по этому пути не существует.", true);
+            }
+            catch (FormatException)
+            {
+                Message("Файл имеет некорректный формат.", true);
+            }
             catch (Exception e)
             {
-                Message(e.Message, true);
+                Message(e.GetType().ToString(), true);
             }
             Run(MainMenuItems);
         }
