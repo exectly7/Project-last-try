@@ -100,6 +100,10 @@ namespace Project_last_try
             {
                 Message("Файл имеет некорректный формат.", true);
             }
+            catch (BadCsvException)
+            {
+                Message("Данные в файле некорректны.", true);
+            }
             catch (Exception e)
             {
                 Message(e.GetType().ToString(), true);
