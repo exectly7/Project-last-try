@@ -5,8 +5,14 @@ namespace Project_last_try
     /// </summary>
     public class SwitchFileMenuItem : MenuItem
     {
+        /// <summary>
+        /// Название пункта меню.
+        /// </summary>
         public override string Title { get; set; } = "Выбрать файл";
 
+        /// <summary>
+        /// Запускает выполнение задачи.
+        /// </summary>
         public override void Start()
         {
             Menu.Message("Введите путь к файлу:");

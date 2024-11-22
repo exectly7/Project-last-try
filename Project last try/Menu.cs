@@ -23,7 +23,7 @@ namespace Project_last_try
         /// <summary>
         /// Список элементов меню для работы побочного меню 4 задачи.
         /// </summary>
-        public static readonly MenuItem[] SubMenuItems = [new ReviewPerYeatMenuItem(), new RatingPercentMenuItem(), 
+        public static readonly MenuItem[] SubMenuItems = [new ReviewPerYearMenuItem(), new RatingPercentMenuItem(), 
                                                         new BadReviewsImagesMenuItem(), new GoodAndBadPerYearMenuItem()];
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace Project_last_try
         /// <summary>
         /// Выводит меню в консоль.
         /// </summary>
-        public static void Show(MenuItem[] items)
+        private static void Show(MenuItem[] items)
         {
             Console.Clear();
 
@@ -70,8 +70,8 @@ namespace Project_last_try
             {
                 if (i == _selectedItem)
                 {
-                    Console.BackgroundColor = ConsoleColor.Yellow;
-                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.BackgroundColor = ConsoleColor.Cyan;
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
                 }
                 else
                 {

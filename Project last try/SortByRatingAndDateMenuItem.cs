@@ -5,12 +5,27 @@ namespace Project_last_try
     /// </summary>
     public class SortByRatingAndDateMenuItem : MenuItem
     {
+        /// <summary>
+        /// Название пункта меню.
+        /// </summary>
         public override string Title { get; set; } = "Сделать выборку по рейтингу отсортировав по дате.";
+        
+        /// <summary>
+        /// Название для файла данное по условию.
+        /// </summary>
         private const string FileName = "top-reviews-20-21.csv";
+        
+        /// <summary>
+        /// Вспомогательное поле для построения пути к папке Output.
+        /// </summary>
         private static readonly string[] BuildDirectory = Directory.GetCurrentDirectory().Split(Path.DirectorySeparatorChar);
+        
+        /// <summary>
+        /// Построение относительного пути к Папке Output.
+        /// </summary>
         private static readonly string SolutionDirectory = string.Join(Path.DirectorySeparatorChar, BuildDirectory, 0,
-                                                                BuildDirectory.Length - 3) + Path.DirectorySeparatorChar + "Data" + Path.DirectorySeparatorChar
-                                                            + "Output" + Path.DirectorySeparatorChar;
+                                                               BuildDirectory.Length - 3) + Path.DirectorySeparatorChar + "Data" + Path.DirectorySeparatorChar
+                                                           + "Output" + Path.DirectorySeparatorChar;
         public override void Start()
         {
             if (Program.AllReviews == Array.Empty<Review>())

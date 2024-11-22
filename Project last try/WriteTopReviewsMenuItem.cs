@@ -14,15 +14,27 @@ namespace Project_last_try
             set => throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Заголовок для csv.
+        /// </summary>
         public const string Header = "name,location,Date,Rating,Review,Image_Links";
+        
+        /// <summary>
+        /// Название файла данное по условию.
+        /// </summary>
         private const string FileName = "top-reviews-20-21.csv";
+        
+        /// <summary>
+        /// Вспомогательное поле для построения пути к папке Output.
+        /// </summary>
         private static readonly string[] BuildDirectory = Directory.GetCurrentDirectory().Split(Path.DirectorySeparatorChar);
+        
+        /// <summary>
+        /// Построение относительного пути к Папке Output.
+        /// </summary>
         private static readonly string SolutionDirectory = string.Join(Path.DirectorySeparatorChar, BuildDirectory, 0,
-                                                                BuildDirectory.Length - 3) + Path.DirectorySeparatorChar + "Data" + Path.DirectorySeparatorChar
-                                                            + "Output" + Path.DirectorySeparatorChar;
-
-        private readonly string _outputPath =
-            "/Users/ivanyburov/RiderProjects/Project last try/Project last try/Data/Output/";
+                                                               BuildDirectory.Length - 3) + Path.DirectorySeparatorChar + "Data" + Path.DirectorySeparatorChar
+                                                           + "Output" + Path.DirectorySeparatorChar;
         /// <summary>
         /// Запустить выполнение задачи.
         /// </summary>
@@ -42,7 +54,7 @@ namespace Project_last_try
             reviewsToWrite.Add(Header);
             foreach (Review review in Program.AllReviews)
             {
-                if (review.Rating >= n && (review.Date.Year == 2020 || review.Date.Year == 2021))
+                if (review.Rating >= n && review.Date.Year is 2020 or 2021)
                 {
                     reviewsToWrite.Add(review.CsvLine);
                 }

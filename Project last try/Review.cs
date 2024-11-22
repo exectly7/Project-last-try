@@ -74,7 +74,7 @@ namespace Project_last_try
             Date = ParseDate(parsedLine[2]);
             Rating = ParsedRating(parsedLine[3]);
             _text = parsedLine[4];
-            WithImage = parsedLine[5] == "['No Images']" ? false : true;
+            WithImage = parsedLine[5] != "['No Images']";
             CsvLine = csvLine;
         }
 

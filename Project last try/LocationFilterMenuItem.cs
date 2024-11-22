@@ -13,7 +13,14 @@ namespace Project_last_try
             get => "Подборка отзывов по локации, запись в файл";
             set => throw new NotImplementedException();
         }
+        /// <summary>
+        /// Вспомогательное поле для построения пути к папке Output.
+        /// </summary>
         private static readonly string[] BuildDirectory = Directory.GetCurrentDirectory().Split(Path.DirectorySeparatorChar);
+        
+        /// <summary>
+        /// Построение относительного пути к Папке Output.
+        /// </summary>
         private static readonly string SolutionDirectory = string.Join(Path.DirectorySeparatorChar, BuildDirectory, 0,
                                                                BuildDirectory.Length - 3) + Path.DirectorySeparatorChar + "Data" + Path.DirectorySeparatorChar
                                                            + "Output" + Path.DirectorySeparatorChar;
@@ -29,6 +36,7 @@ namespace Project_last_try
             }
             Dictionary<string, List<string>> locationReview = new();
             List<string> csvToWrite = new();
+            csvToWrite.Add(WriteTopReviewsMenuItem.Header);
             foreach (Review review in Program.AllReviews)
             {
                 if (review.WithImage)

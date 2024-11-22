@@ -8,7 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8cfb8f4-ec1c-4120-bb3f-edcd0ac980f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Project last try/LocationFilterMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/LocationFilterMenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/Review.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/Review.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/ReviewPerYeatMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/ReviewPerYearMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/SortByRatingAndDateMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/SortByRatingAndDateMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/SwitchFileMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/SwitchFileMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project last try/WriteTopReviewsMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/WriteTopReviewsMenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/bin/Debug/net8.0/Project last try.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/bin/Debug/net8.0/Project last try.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/bin/Debug/net8.0/Project last try.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/bin/Debug/net8.0/Project last try.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project last try/obj/Debug/net8.0/Project last try.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project last try/obj/Debug/net8.0/Project last try.AssemblyInfo.cs" afterDir="false" />
@@ -97,7 +104,7 @@
       <updated>1732215281809</updated>
       <workItem from="1732215283273" duration="12067000" />
       <workItem from="1732227526273" duration="83000" />
-      <workItem from="1732227870204" duration="17808000" />
+      <workItem from="1732227870204" duration="18563000" />
     </task>
     <servers />
   </component>
