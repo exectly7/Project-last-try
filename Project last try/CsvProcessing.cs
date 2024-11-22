@@ -17,10 +17,19 @@ namespace Project_last_try
             {
                 throw new BadCsvException();
             }
-            foreach (string row in data[1..])
+
+            try
             {
-                reviews.Add(new Review(CsvLineParse(row), row));
+                foreach (string row in data[1..])
+                {
+                    reviews.Add(new Review(CsvLineParse(row), row));
+                }
             }
+            catch (ArgumentOutOfRangeException)
+            {
+                throw new BadCsvException();
+            }
+
             return reviews.ToArray();
         }
 
@@ -31,37 +40,29 @@ namespace Project_last_try
         /// <returns>Массив полей строки.</returns>
         private string[] CsvLineParse(string input)
         {
-            try
+            string[] result = new string[6];
+            for (int i = 0; i < 6; i++)
             {
-                string[] result = new string[6];
-                for (int i = 0; i < 6; i++)
+                if (input[0] == '"')
                 {
-                    if (input[0] == '"')
+                    result[i] = input[(input.IndexOf('"') + 1)..(input[1..].IndexOf('"') + 1)];
+                    if (input[1..].IndexOf('"') + 1 != input.Length - 1)
                     {
-                        result[i] = input[(input.IndexOf('"') + 1)..(input[1..].IndexOf('"') + 1)];
-                        if (input[1..].IndexOf('"') + 1 != input.Length - 1)
-                        {
-                            input = input[(input[1..].IndexOf("\",", StringComparison.Ordinal) + 3)..];
-                        }
-                    }
-                    else if (input.IndexOf(',') != -1)
-                    {
-                        result[i] = input[..(input[1..].IndexOf(',') + 1)];
-                        input = input[(input.IndexOf(',') + 1)..];
-                    }
-                    else
-                    {
-                        result[i] = input;
+                        input = input[(input[1..].IndexOf("\",", StringComparison.Ordinal) + 3)..];
                     }
                 }
-            
-                return result;
+                else if (input.IndexOf(',') != -1)
+                {
+                    result[i] = input[..(input[1..].IndexOf(',') + 1)];
+                    input = input[(input.IndexOf(',') + 1)..];
+                }
+                else
+                {
+                    result[i] = input;
+                }
             }
-            catch (ArgumentOutOfRangeException)
-            {
-                throw new BadCsvException();
-            }
-            
+        
+            return result;
         }
     }
 }

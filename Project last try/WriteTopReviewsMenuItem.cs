@@ -11,7 +11,7 @@ namespace Project_last_try
             set => throw new NotImplementedException();
         }
 
-        private const string Header = "name,location,Date,Rating,Review,Image_Links";
+        public const string Header = "name,location,Date,Rating,Review,Image_Links";
         private const string FileName = "top-reviews-20-21.csv";
         private static string[] _basePath =  Directory.GetCurrentDirectory().Split(Path.DirectorySeparatorChar);
 
@@ -22,7 +22,7 @@ namespace Project_last_try
         /// </summary>
         public override void Start()
         {
-            if (Program.AllReviews == Array.Empty<Review>())
+            if (Program.AllReviews.Length == 0)
             {
                 throw new EmptyFileException();
             }

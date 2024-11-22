@@ -39,11 +39,11 @@ namespace Project_last_try
                 switch (input)
                 {
                     case ConsoleKey.UpArrow:
-                        _selectedItem = _selectedItem == 0 ? items.Length - 1 : --_selectedItem;
+                        _selectedItem = _selectedItem == 0 ? items.Length - 1 : _selectedItem - 1;
                         Show(items);
                         break;
                     case ConsoleKey.DownArrow:
-                        _selectedItem = _selectedItem ==  items.Length - 1 ? 0 : ++_selectedItem;
+                        _selectedItem = _selectedItem ==  items.Length - 1 ? 0 : _selectedItem + 1;
                         Show(items);
                         break;
                     case ConsoleKey.Enter:
@@ -106,7 +106,7 @@ namespace Project_last_try
             }
             catch (Exception e)
             {
-                Message(e.GetType().ToString(), true);
+                Message(e.Message, true);
             }
             Run(MainMenuItems);
         }

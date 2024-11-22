@@ -21,7 +21,6 @@ namespace Project_last_try
         /// </summary>
         public static void Main()
         {
-            Menu.Show(Menu.MainMenuItems);
             Menu.Run(Menu.MainMenuItems);
         }
     }

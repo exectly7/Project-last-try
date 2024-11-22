@@ -16,7 +16,7 @@ namespace Project_last_try
         /// </summary>
         public override void Start()
         {
-            if (Program.AllReviews == Array.Empty<Review>())
+            if (Program.AllReviews.Length == 0)
             {
                 throw new EmptyFileException();
             }

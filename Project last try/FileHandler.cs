@@ -52,7 +52,7 @@ namespace Project_last_try
         /// <param name="data">Массив строк для записи.</param>
         public void Export(string[] data)
         {
-            File.WriteAllLines(FilePath + FileName, data);
+            File.WriteAllLines(FilePath + Path.DirectorySeparatorChar + FileName, data);
         }
     }
 } 
